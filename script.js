@@ -1,6 +1,6 @@
 async function listFiles() {
-    const repo = "yourusername/repository-name";
-    const path = ""; // Leave empty for root, or specify a subdirectory
+    const repo = "elijoe1/elijoe1.github.io";
+    const path = "eval"; // Leave empty for root, or specify a subdirectory
     
     const response = await fetch(`https://api.github.com/repos/${repo}/contents/${path}`);
     const files = await response.json();
